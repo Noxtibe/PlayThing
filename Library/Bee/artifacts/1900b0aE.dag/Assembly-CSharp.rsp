@@ -346,7 +346,7 @@
 "Assets/Scripts/Modifiers/RotateAroundPoint.cs"
 "Assets/Scripts/Modifiers/Scale.cs"
 "Assets/Scripts/Modifiers/ScaleObject.cs"
-"Assets/Shake.cs"
+"Assets/Scripts/Modifiers/Shake.cs"
 -langversion:8.0
 
 /deterministic

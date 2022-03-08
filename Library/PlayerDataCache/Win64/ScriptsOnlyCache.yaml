@@ -2,17 +2,30 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AddOne
+    - AudioManager
+    - Break
     - ChangeColor
+    - DragAndShoot
+    - EZCameraShake.CameraShaker
     - MainMenu
+    - MainMenuMusic
+    - MouseDrag
     - PauseMenu
     - RandomColor
     - ReloadScene
     - Rotate
     - RotateAroundPoint
     - Scale
+    - ScaleObject
+    - Scroller
+    - Shake
+    - Spawner
+    - SpawnerIso
+    - Theme
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
+    - TMPro.TMP_ColorGradient
     - TMPro.TMP_FontAsset
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
@@ -35,9 +48,10 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/Level_1.unity:
+    Assets/Scenes/Level.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -56,11 +70,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -75,44 +95,74 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1546}
     - Class: 114
+      Script: {instanceID: 1712}
+    - Class: 114
       Script: {instanceID: 2234}
     - Class: 114
-      Script: {instanceID: 2530}
+      Script: {instanceID: 2340}
     - Class: 114
-      Script: {instanceID: 2734}
+      Script: {instanceID: 2532}
     - Class: 114
-      Script: {instanceID: 3004}
+      Script: {instanceID: 2570}
     - Class: 114
-      Script: {instanceID: 4226}
+      Script: {instanceID: 2738}
     - Class: 114
-      Script: {instanceID: 4404}
+      Script: {instanceID: 3008}
     - Class: 114
-      Script: {instanceID: 4932}
+      Script: {instanceID: 3890}
     - Class: 114
-      Script: {instanceID: 5180}
+      Script: {instanceID: 3938}
     - Class: 114
-      Script: {instanceID: 5484}
+      Script: {instanceID: 3944}
     - Class: 114
-      Script: {instanceID: 5650}
+      Script: {instanceID: 4232}
     - Class: 114
-      Script: {instanceID: 5958}
+      Script: {instanceID: 4238}
     - Class: 114
-      Script: {instanceID: 6586}
+      Script: {instanceID: 4416}
     - Class: 114
-      Script: {instanceID: 6868}
+      Script: {instanceID: 4944}
     - Class: 114
-      Script: {instanceID: 7292}
+      Script: {instanceID: 5146}
     - Class: 114
-      Script: {instanceID: 24436}
+      Script: {instanceID: 5194}
     - Class: 114
-      Script: {instanceID: 33084}
+      Script: {instanceID: 5498}
+    - Class: 114
+      Script: {instanceID: 5664}
+    - Class: 114
+      Script: {instanceID: 5700}
+    - Class: 114
+      Script: {instanceID: 5976}
+    - Class: 114
+      Script: {instanceID: 6352}
+    - Class: 114
+      Script: {instanceID: 6610}
+    - Class: 114
+      Script: {instanceID: 6728}
+    - Class: 114
+      Script: {instanceID: 6892}
+    - Class: 114
+      Script: {instanceID: 6986}
+    - Class: 114
+      Script: {instanceID: 7268}
+    - Class: 114
+      Script: {instanceID: 7322}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
+    - Class: 134
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -139,7 +189,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -148,27 +198,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1546}
     - Class: 114
-      Script: {instanceID: 2122}
+      Script: {instanceID: 2124}
     - Class: 114
-      Script: {instanceID: 2530}
+      Script: {instanceID: 2254}
     - Class: 114
-      Script: {instanceID: 2734}
+      Script: {instanceID: 2532}
     - Class: 114
-      Script: {instanceID: 3004}
+      Script: {instanceID: 2738}
     - Class: 114
-      Script: {instanceID: 3740}
+      Script: {instanceID: 3008}
     - Class: 114
-      Script: {instanceID: 3994}
+      Script: {instanceID: 3744}
     - Class: 114
-      Script: {instanceID: 4246}
+      Script: {instanceID: 3890}
     - Class: 114
-      Script: {instanceID: 4932}
+      Script: {instanceID: 3944}
     - Class: 114
-      Script: {instanceID: 5484}
+      Script: {instanceID: 4002}
     - Class: 114
-      Script: {instanceID: 5650}
+      Script: {instanceID: 4258}
     - Class: 114
-      Script: {instanceID: 5958}
+      Script: {instanceID: 4944}
+    - Class: 114
+      Script: {instanceID: 5498}
+    - Class: 114
+      Script: {instanceID: 5664}
+    - Class: 114
+      Script: {instanceID: 5788}
+    - Class: 114
+      Script: {instanceID: 5976}
+    - Class: 114
+      Script: {instanceID: 6242}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -234,6 +294,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineFreeLook
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MouseDrag
   - hash:
       serializedVersion: 2
       Hash: e78709e690dc77916f3252ffe12b9d1f
@@ -314,12 +380,6 @@ ScriptsOnlyBuild:
     className: UnityOnJointBreakMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameOver
-  - hash:
-      serializedVersion: 2
       Hash: a366b8e3384e3c5509b46c3b7a2450b3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -330,6 +390,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 2deda8e5342fc8f66576fdb7d20b5f27
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpawnerIso
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -366,6 +432,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: TimelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: b972bc4165e44f2d47995c1089e4c332
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Spawner
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -656,6 +728,18 @@ ScriptsOnlyBuild:
     className: VariablesSaver
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Theme
+  - hash:
+      serializedVersion: 2
+      Hash: 7d71c6ac3b1db75f3799f45080e12660
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -726,6 +810,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ReloadScene
   - hash:
       serializedVersion: 2
       Hash: 0c10a5b6885768eea16224cbbdcdf87e
@@ -897,6 +987,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DragAndShoot
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnDeselectMessageListener
@@ -980,6 +1076,18 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: d86e2f933d0937148eb5601802ebfcff
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EZCameraShake
+    className: CameraShaker
+  - hash:
+      serializedVersion: 2
+      Hash: 3316372098f146a222cba3f6b8bbfb40
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Scroller
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1035,6 +1143,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenuMusic
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnDragMessageListener
@@ -1044,6 +1158,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Shake
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1154,16 +1274,16 @@ ScriptsOnlyBuild:
     className: UnityOnSubmitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 897cecb6841c6c60c5b3861ab7a434ce
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AddOne
+  - hash:
+      serializedVersion: 2
       Hash: a81d4c2c1cf3ad164d277d927a193679
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Dropdown
-  - hash:
-      serializedVersion: 2
-      Hash: 4b8dff74c0603f3e6246514a412ffcba
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: HealthBar
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1196,6 +1316,12 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: 57e553ee4cf787999bfe40c869b3d972
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Break
+  - hash:
+      serializedVersion: 2
       Hash: 040dd48e3a027d5424519a5fa2009df4
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1224,6 +1350,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseOverMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 90d6565efd93a43714d6fae52000e72b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScaleObject
   - hash:
       serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
@@ -1302,20 +1434,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 897cecb6841c6c60c5b3861ab7a434ce
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AddOne
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ReloadScene
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
-  - Assets/Scenes/Level_1.unity
+  - Assets/Scenes/Level.unity
   playerPath: C:/Logiciel Artfx/Unity Projects/PlayThing/Build/PlayThing.exe
